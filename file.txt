@@ -47,10 +47,36 @@ git add .
 git commit -m "landing: add privacy policy page and route"
 git push origin master
 
-I've attached a screenshot of the updated Spendly hero section design.
 
-Modify only the hero section in @templates/landing.html and @static/css/landing.css
-to match this image exactly. Do not touch any other part of the page.
+
+
+Modify only the hero section in @templates/landing.html and @static/css/landing.css to match the following design exactly. Do not touch any other part of the page.
+Hero section structure (top to bottom):
+
+A small pill/badge at the top center with a green dot and text: "Free to use · No credit card needed" — light green background, rounded, subtle border
+Large heading (two lines, center-aligned):
+
+Line 1: "Track every rupee." — dark/black, bold
+Line 2: "Know where it goes." — green (#2ecc71 or similar), bold, same font size
+
+
+Subtext below heading (center-aligned, muted gray):
+"Spendly helps you log expenses, spot patterns, and stay on budget — without the spreadsheet headache."
+Two CTA buttons side by side, center-aligned, both black with white text, rounded corners:
+
+"Create free account"
+"See how it works"
+
+
+A browser mockup card below the buttons with light gray/off-white background, macOS-style red/yellow/green dots in top-left, containing:
+
+Three stat cards in a row: "This month ₹18,240 +12% vs last (red)", "Budget left ₹6,760 43% remaining (green)", "Transactions 34 this month"
+Below the cards: three horizontal progress bars labeled Food (orange, ~75%), Travel (blue, ~55%), Bills (purple, ~40%)
+
+Match fonts, spacing, and colors as closely as possible to this layout.
+
+
+
 
 git add .
 git commit -m "landing: redesign hero section to match mockup"
