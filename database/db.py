@@ -86,3 +86,16 @@ def seed_db():
 
     conn.commit()
     conn.close()
+
+
+def create_user(name, email, password_hash):
+    """Insert a new user and return their id."""
+    conn = get_db()
+    cursor = conn.execute(
+        "INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)",
+        (name, email, password_hash),
+    )
+    user_id = cursor.lastrowid
+    conn.commit()
+    conn.close()
+    return user_id
